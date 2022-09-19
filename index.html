@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <h1>Hello this is alert testing</h1>
+</head>
+<body>
+    
+<script>
+    function showAlert() {
+      alert ("Thank you for clicking me!");
+    }
+
+    function fun() {  
+var a = prompt("Hey, please enter your name", "");  
+if (a != null) {  
+document.getElementById("afterPrompt").innerHTML = "Welcome " + a + " thank you for you prompt answer";  
+}  
+}  
+    </script>
+    
+    
+    <button id = btnAlert onclick="showAlert()">Show alert</button>
+    <button id = btnPrompt onclick="fun()">Show prompt</button>
+
+    <h2 id = afterPrompt>Hey!</h2>
+
+
+<link rel="stylesheet" href="stylesheet.css">
+</body>
+</html>
